@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.right-curtain {
+  clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.left-curtain {
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+}
+
+.curtain-button {
+  @apply rounded-full bg-neutral-900 w-64 h-64 z-10;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.25) inset;
+  background-image: url("/starter-button.png");
+  background-repeat: no-repeat;
+  background-size: 14.6rem;
+  background-position: 50%;
+  position: absolute;
+}
+
+.grunge {
+  position: absolute;
+  background-image: url("/grunge.png");
+  background-position: 50%;
+  opacity: 0.2;
+  /* mix-blend-mode: overlay; */
+  background-repeat: no-repeat;
+  background-size: 750px;
+  background-blend-mode: overlay;
+  width: 100%;
+  height: 100%;
+  background-color: #272727;
+}
+
+.curtain-button-wrapper[data-isOn="false"] {
+  align-items: center;
+}
+.curtain-button-wrapper[data-isOn="true"] {
+  align-items: start;
+}
+
+.grunge-logo {
+  background-image: url("/grunge_logo2.png");
+  background-position: 48% -5%;
+  background-repeat: no-repeat;
+  background-size: 350px;
+}
+
+.marquee {
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw; */
+  @apply p-8;
+  cursor: -webkit-grab;
+}
+
+.marquee-item-wrapper {
+  display: flex;
+  /* height: 30%; */
+  /* align-items: center; */
+  /* transform-origin: 50% 0; */
+  transform: rotate(-5deg);
+}
+
+.marquee-item {
+  @apply font-extrabold text-7xl uppercase;
+  letter-spacing: -0.05em;
+  padding-right: 0.25em;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  user-select: none;
+  will-change: transform;
+  /* color: #404040; */
+}
+
+.drag {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #e6d5b8;
+}
