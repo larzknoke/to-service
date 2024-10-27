@@ -35,7 +35,7 @@ body {
 }
 
 .curtain-button {
-  @apply rounded-full bg-neutral-900 w-64 h-64 z-10;
+  @apply rounded-full bg-neutral-900 w-64 h-64 z-10 mb-24;
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.25) inset;
   background-image: url("/starter-button.png");
   background-repeat: no-repeat;
