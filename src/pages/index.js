@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Curtain>
       <div className={`p-5 text-white`}>
-        <div className="contact-wrapper flex flex-col gap-5 md:gap-4 p-5 md:p-10">
+        <div className="contact-wrapper flex flex-col gap-4 p-5 md:p-10">
           <Image
             src="kontakt.svg"
             alt="Kontakt"
@@ -16,7 +16,7 @@ export default function Home() {
             height="33"
             className="w-28 md:w-40"
           />
-          <div className="flex flex-row gap-6 items-center">
+          <div className="flex flex-row gap-5 items-center">
             <Image
               src="facebook.svg"
               alt="Facebook Logo"
@@ -37,10 +37,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="marquee">
+        <div>
           <InteractiveMarquee />
         </div>
-        <div className="flex flex-row gap-1 font-bold text-neutral-600 justify-end px-8 py-2">
+        <div className="flex flex-row gap-1 font-bold text-neutral-600 justify-start md:justify-end px-8 py-2">
           <div>Impressum</div>
           <div>|</div>
           <div>Datenschutz</div>

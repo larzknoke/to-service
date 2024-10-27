@@ -78,7 +78,7 @@ body {
   left: 0;
   height: 100vh;
   width: 100vw; */
-  @apply p-32 md:p-8;
+  @apply pt-64 pb-40 md:py-8;
   cursor: -webkit-grab;
 }
 
