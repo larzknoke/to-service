@@ -8,13 +8,13 @@ export default function Home() {
   return (
     <Curtain>
       <div className={`p-5 text-white`}>
-        <div className="contact-wrapper flex flex-col gap-4 p-10">
+        <div className="contact-wrapper flex flex-col gap-5 md:gap-4 p-5 md:p-10">
           <Image
             src="kontakt.svg"
             alt="Kontakt"
             width="218"
             height="33"
-            className="w-40"
+            className="w-28 md:w-40"
           />
           <div className="flex flex-row gap-6 items-center">
             <Image
@@ -22,9 +22,9 @@ export default function Home() {
               alt="Facebook Logo"
               width="218"
               height="33"
-              className="w-9"
+              className=" w-7 md:w-9"
             />
-            <div className="flex flex-row uppercase font-extrabold gap-2">
+            <div className="flex flex-row uppercase font-extrabold gap-2 text-sm md:text-lg">
               <div className="flex flex-col gap-2">
                 <p className="leading-3 text-neutral-500">FON</p>
                 <p className="leading-3 text-neutral-500">EMAIL</p>

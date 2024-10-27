@@ -2,9 +2,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useWindowSize } from "@react-hook/window-size";
 
 export default function Curtain({ children }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [wWidth, wHeight] = useWindowSize();
 
   // const curtainVariants = {
   //   open: { width: "55%", transition: { duration: 0.4, ease: "easeInOut" } },
@@ -25,7 +27,7 @@ export default function Curtain({ children }) {
   // };
 
   const curtainVariants = {
-    open: { width: "55%", transition: { duration: 0.4, ease: "easeInOut" } },
+    open: { width: "57%", transition: { duration: 0.4, ease: "easeInOut" } },
     closed: {
       width: 0,
       transition: { duration: 0.4, ease: "easeInOut", delay: 0 },
@@ -37,7 +39,7 @@ export default function Curtain({ children }) {
       // y: "-150px",
       rotate: 360,
       scale: 0.8,
-      top: "5%",
+      top: wWidth > 500 ? "5%" : "15%",
     },
     closed: { rotate: 0 },
   };
@@ -61,13 +63,13 @@ export default function Curtain({ children }) {
         className="absolute m-auto w-96 left-0 right-0 mx-auto"
       />
       <motion.div
-        className="absolute z-30 left-0 top-0 h-full bg-neutral-950 origin-left w-[60%]  left-curtain"
+        className="absolute z-30 left-0 top-0 h-full bg-neutral-900 origin-left   left-curtain"
         variants={curtainVariants}
         initial="closed"
         animate={!isOpen ? "open" : "closed"}
       />
       <motion.div
-        className="absolute z-30 right-0 top-0 h-full bg-neutral-800 origin-right w-[60%] right-curtain"
+        className="absolute z-30 right-0 top-0 h-full bg-neutral-800 origin-right right-curtain"
         variants={curtainVariants}
         initial="closed"
         animate={!isOpen ? "open" : "closed"}

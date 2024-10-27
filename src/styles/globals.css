@@ -78,7 +78,7 @@ body {
   left: 0;
   height: 100vh;
   width: 100vw; */
-  @apply p-8;
+  @apply p-32 md:p-8;
   cursor: -webkit-grab;
 }
 
@@ -91,14 +91,13 @@ body {
 }
 
 .marquee-item {
-  @apply font-extrabold text-7xl uppercase;
+  @apply font-extrabold text-3xl md:text-7xl uppercase;
   letter-spacing: -0.05em;
   padding-right: 0.25em;
   white-space: nowrap;
   -webkit-user-select: none;
   user-select: none;
   will-change: transform;
-  /* color: #404040; */
 }
 
 .drag {
