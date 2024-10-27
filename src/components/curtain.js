@@ -55,13 +55,13 @@ export default function Curtain({ children }) {
 
   return (
     <div className="relative h-screen overflow-hidden grunge-logoOFF">
-      {/* <Image
+      <Image
         src="/grunge_logo2.png"
         alt="Grunge Logo"
         width="500"
         height="758"
         className="absolute m-auto w-96 left-0 right-0 mx-auto"
-      /> */}
+      />
       <motion.div
         className="absolute z-30 left-0 top-0 h-full bg-neutral-900 origin-left  left-curtain"
         variants={curtainVariants}
@@ -75,11 +75,11 @@ export default function Curtain({ children }) {
         animate={isOpen ? "open" : "closed"}
       />
       <div className="absolute flex z-40 left-0 h-full w-full items-center justify-center">
-        {/* <motion.div
+        <motion.div
           variants={grungeVariants}
           animate={isOpen ? "open" : "closed"}
           className="grunge"
-        ></motion.div> */}
+        ></motion.div>
         <motion.div
           variants={curtainButtonVariants}
           animate={isOpen ? "open" : "closed"}
