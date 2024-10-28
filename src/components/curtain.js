@@ -74,7 +74,7 @@ export default function Curtain({ children }) {
         initial="closed"
         animate={isOpen ? "open" : "closed"}
       />
-      <div className="absolute flex z-40 left-0 h-full w-full items-center justify-center">
+      <div className="absolute flex z-50 left-0 h-full w-full items-center justify-center">
         <motion.div
           variants={grungeVariants}
           animate={isOpen ? "open" : "closed"}
