@@ -1,6 +1,6 @@
 // src/Curtain.js
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import Image from "next/image";
 import { useWindowSize } from "@react-hook/window-size";
 
@@ -30,7 +30,7 @@ export default function Curtain({ children }) {
     closed: { width: "57%", transition: { duration: 0.4, ease: "easeInOut" } },
     open: {
       width: 0,
-      transition: { duration: 0.4, ease: "easeInOut", delay: 0 },
+      transition: { duration: 0.4, ease: "easeInOut", delay: 0.4 },
     },
   };
 
@@ -41,7 +41,7 @@ export default function Curtain({ children }) {
       scale: 0.8,
       top: wWidth > 500 ? "5%" : "15%",
     },
-    closed: { rotate: 0 },
+    closed: { rotate: 0, scale: 1 },
   };
 
   const grungeVariants = {
@@ -65,25 +65,31 @@ export default function Curtain({ children }) {
       <motion.div
         className="absolute z-30 left-0 top-0 h-full bg-neutral-900 origin-left  left-curtain"
         variants={curtainVariants}
-        initial="closed"
-        animate={isOpen ? "open" : "closed"}
+        initial={"closed"}
+        animate={"open"}
+        transition={{ delay: 0.6, type: "spring" }}
       />
       <motion.div
         className="absolute z-30 right-0 top-0 h-full bg-neutral-800 origin-right right-curtain"
         variants={curtainVariants}
-        initial="closed"
-        animate={isOpen ? "open" : "closed"}
+        initial={"closed"}
+        animate={"open"}
+        transition={{ delay: 0.6, type: "spring" }}
       />
       <div className="absolute flex z-50 left-0 h-full w-full items-center justify-center">
         <motion.div
           variants={grungeVariants}
-          animate={isOpen ? "open" : "closed"}
+          initial={"closed"}
+          animate={"open"}
+          transition={{ delay: 0.6, type: "spring" }}
           className="grunge"
         ></motion.div>
         <motion.div
           variants={curtainButtonVariants}
-          animate={isOpen ? "open" : "closed"}
-          transition={{ type: "spring" }}
+          initial={"closed"}
+          animate={"open"}
+          transition={{ delay: 0.3, type: "spring" }}
+          // animate={isOpen ? "open" : "closed"}
           className="curtain-button"
           onClick={handleToggle}
         ></motion.div>
