@@ -56,6 +56,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #272727;
+  pointer-events: none;
 }
 
 .curtain-button-wrapper[data-isOn="false"] {
@@ -78,7 +79,7 @@ body {
   left: 0;
   height: 100vh;
   width: 100vw; */
-  @apply pt-64 pb-40 md:py-8;
+  @apply pt-64 pb-40 md:py-24;
   cursor: -webkit-grab;
 }
 
@@ -112,4 +113,18 @@ body {
   height: 100%;
   width: 100%;
   background-color: #e6d5b8;
+  pointer-events: none;
+}
+
+.datenschutz-content h2 {
+  @apply text-2xl font-bold;
+}
+.datenschutz-content h3 {
+  @apply text-xl font-bold;
+}
+
+.datenschutz-content h2,
+.datenschutz-content h3,
+.datenschutz-content p {
+  margin-bottom: 20px;
 }

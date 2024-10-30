@@ -3,12 +3,17 @@ import Curtain from "@/components/curtain";
 import { InteractiveMarquee } from "@/components/interactiveMarquee";
 import Impressum from "@/components/impressum";
 import Contact from "@/components/contact";
+import Datenschutz from "@/components/datenschutz";
 
 export default function Home() {
   const [impressOpen, setImpressOpen] = useState(false);
+  const [datenschutzOpen, setDatenschutzOpen] = useState(false);
 
   function handleImpress() {
     setImpressOpen((prev) => !prev);
+  }
+  function handleDatenschutz() {
+    setDatenschutzOpen((prev) => !prev);
   }
 
   return (
@@ -26,12 +31,19 @@ export default function Home() {
             Impressum
           </div>
           <div className=" z-50">|</div>
-          <div className="hover:text-neutral-300 hover:cursor-pointer z-50">
+          <div
+            onClick={handleDatenschutz}
+            className="hover:text-neutral-300 hover:cursor-pointer z-50"
+          >
             Datenschutz
           </div>
         </div>
       </div>
       <Impressum impressOpen={impressOpen} handleImpress={handleImpress} />
+      <Datenschutz
+        datenschutzOpen={datenschutzOpen}
+        handleDatenschutz={handleDatenschutz}
+      />
     </Curtain>
   );
 }

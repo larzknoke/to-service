@@ -39,7 +39,7 @@ export default function Curtain({ children }) {
       // y: "-150px",
       rotate: 360,
       scale: 0.8,
-      top: wWidth > 500 ? "5%" : "15%",
+      top: wWidth > 500 ? "10%" : "15%",
     },
     closed: { rotate: 0, scale: 1 },
   };
@@ -76,7 +76,7 @@ export default function Curtain({ children }) {
         animate={"open"}
         transition={{ delay: 0.6, type: "spring" }}
       />
-      <div className="absolute flex z-50 left-0 h-full w-full items-center justify-center">
+      <div className="absolute flex z-50 left-0 h-full w-full items-center justify-center pointer-events-none	">
         <motion.div
           variants={grungeVariants}
           initial={"closed"}

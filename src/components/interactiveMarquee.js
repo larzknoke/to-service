@@ -5,7 +5,7 @@ import { useRafLoop } from "react-use";
 import { useWindowSize } from "@react-hook/window-size";
 
 const row1 = {
-  content: "GARTEN- UND LANDSCHAFTSBAU  TOCKENBAU ",
+  content: "Minibaggerbetrieb Kran- u. Hubsteigerarbeiten Abbrucharbeiten ",
   speed: 1.5,
   threshold: 0.014,
   wheelFactor: 1.5,
@@ -13,7 +13,7 @@ const row1 = {
   color: "text-neutral-700",
 };
 const row2 = {
-  content: "FLIESEN ABBRUCH Minibaggerbetrieb Estrich",
+  content: "Pflasterarbeiten Grünanlagen Reinigungsarbeiten",
   speed: 1.8,
   threshold: 0.014,
   wheelFactor: 1.5,
@@ -22,7 +22,7 @@ const row2 = {
   rocken: true,
 };
 const row3 = {
-  content: "MOSAIKARBEITEN  Pflasterarbeiten  Grünanlagen Bodenbelagsarbeiten",
+  content: "Auflösungen Estrich Altmetallhandel",
   speed: 1.4,
   threshold: 0.014,
   wheelFactor: 1.5,
@@ -30,7 +30,7 @@ const row3 = {
   color: "text-neutral-700",
 };
 const row4 = {
-  content: "Reinigungsarbeiten Auflösungen  Altmetallhandel  Trockenausbau",
+  content: "Fliesenverlegung Trockenausbau Bodenbelagsarbeiten",
   speed: 2,
   threshold: 0.014,
   wheelFactor: 1.5,
