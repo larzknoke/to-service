@@ -4,6 +4,9 @@ import { InteractiveMarquee } from "@/components/interactiveMarquee";
 import Impressum from "@/components/impressum";
 import Contact from "@/components/contact";
 import Datenschutz from "@/components/datenschutz";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   const [impressOpen, setImpressOpen] = useState(false);
@@ -23,6 +26,29 @@ export default function Home() {
         <div>
           <InteractiveMarquee />
         </div>
+        <motion.div
+          className=" mx-auto  flex-col gap-5  flex md:hidden w-full justify-center items-center "
+          initial={{ opacity: 0, scale: 0.8, y: "100%" }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1, type: "spring" }}
+        >
+          <Image
+            src="partner.svg"
+            alt="Partner"
+            width="150"
+            height="50"
+            className=" w-20 pt-4"
+          />
+          <Link href="https://tina-engel.com" target="_blank">
+            <Image
+              src="engel_logo.svg"
+              alt="Engel Logo"
+              width="500"
+              height="758"
+              className="w-36"
+            />
+          </Link>
+        </motion.div>
         <div className="absolute md:right-7 md:bottom-7 left-7 bottom-10  flex flex-row gap-1 font-bold text-neutral-600 justify-start md:justify-end">
           <div
             onClick={handleImpress}
