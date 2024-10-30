@@ -28,7 +28,11 @@ function Contact() {
           </div>
           <div className="flex flex-col gap-2">
             <p className="leading-3 text-neutral-300">0172 / 56 14 321</p>
-            <p className="leading-3 text-neutral-300">toservice88@gmail.com </p>
+            <p className="leading-3 text-neutral-300">
+              <Link href="mailto:toservice88@gmail.com">
+                toservice88@gmail.com
+              </Link>
+            </p>
             {/* <p className="leading-3">toservice88@gmail.com</p> */}
           </div>
         </div>
