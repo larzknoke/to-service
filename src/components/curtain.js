@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { delay, motion } from "framer-motion";
 import Image from "next/image";
 import { useWindowSize } from "@react-hook/window-size";
+import Link from "next/link";
 
 export default function Curtain({ children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -58,10 +59,33 @@ export default function Curtain({ children }) {
       <Image
         src="/grunge_logo2.png"
         alt="Grunge Logo"
-        width="500"
-        height="758"
+        width="244"
+        height="198"
         className="absolute m-auto w-96 left-0 right-0 mx-auto"
       />
+      <motion.div
+        className="absolute   right-10 mx-auto top-6  flex-row gap-5 items-start hidden md:flex"
+        initial={{ opacity: 0, scale: 0.8, y: "-100%" }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 1, delay: 2, type: "spring" }}
+      >
+        <Image
+          src="partner.svg"
+          alt="Partner"
+          width="150"
+          height="50"
+          className=" w-20 pt-4"
+        />
+        <Link href="https://tina-engel.com" target="_blank">
+          <Image
+            src="engel_logo.svg"
+            alt="Engel Logo"
+            width="500"
+            height="758"
+            className="w-36"
+          />
+        </Link>
+      </motion.div>
       <motion.div
         className="absolute z-30 left-0 top-0 h-full bg-neutral-900 origin-left  left-curtain"
         variants={curtainVariants}
