@@ -21,7 +21,7 @@ function Datenschutz({ datenschutzOpen, handleDatenschutz }) {
       animate={datenschutzOpen ? "show" : "hide"}
       className={`${
         datenschutzOpen ? "z-50" : "z-40"
-      } impressum fixed top-0 left-0 right-0 bottom-0 m-4 p-6 md:p-8 bg-neutral-800 md:w-1/2 min-h-[90vh] md:h-1/2 md:min-h-[50%] md:top-auto rounded-md overflow-scroll max-h-[75vh]`}
+      } impressum fixed top-0 left-0 right-0 bottom-0 m-4 p-6 md:p-8 bg-neutral-800 md:w-1/2 min-h-[90vh] md:h-1/2 md:min-h-[50%] md:top-auto rounded-md overflow-scroll max-h-[75vh] pointer-events-none`}
     >
       <div className="flex flex-row justify-between">
         <h1 className="text-neutral-600 uppercase text-2xl font-extrabold ">
