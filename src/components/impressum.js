@@ -21,7 +21,7 @@ function Impressum({ impressOpen, handleImpress }) {
       animate={impressOpen ? "show" : "hide"}
       className={`${
         impressOpen ? "z-50" : "z-40"
-      } impressum absolute top-auto left-0 right-0 bottom-16 md:bottom-0 m-4 p-6 md:p-8 bg-neutral-800 md:w-1/2 md:h-1/2 rounded-md`}
+      } impressum fixed top-auto left-0 right-0 bottom-12 md:bottom-0 m-4 p-6 md:p-8 bg-neutral-800 md:w-1/2 md:h-1/2 rounded-md`}
     >
       <div className="flex flex-row justify-between">
         <h1 className="text-neutral-600 uppercase text-2xl font-extrabold ">

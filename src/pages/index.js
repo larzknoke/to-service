@@ -49,7 +49,7 @@ export default function Home() {
             />
           </Link>
         </motion.div>
-        <div className="w-[120%] opacity-20 translate-y-10 -translate-x-6 trans">
+        <div className="md:absolute md:right-0 md:left-0 md:mx-auto md:-bottom-5 w-[120%] md:w-[70vh] md:-z-5 md:opacity-75 opacity-30 md:translate-y-0 md:-translate-x-0 translate-y-10 -translate-x-6">
           <Image
             src="/to-gruppe-filter.png"
             alt="TO-Gruppe"
