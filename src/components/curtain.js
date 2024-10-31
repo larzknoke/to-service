@@ -55,7 +55,7 @@ export default function Curtain({ children }) {
   };
 
   return (
-    <div className="relative h-[100svh] overflow-hidden grunge-logoOFF">
+    <div className="relative h-[100svh] overflow-x-hidden	overflow-y-scroll	 md:overflow-hidden grunge-logoOFF">
       <Image
         src="/grunge_logo2.png"
         alt="Grunge Logo"
@@ -100,7 +100,7 @@ export default function Curtain({ children }) {
         animate={"open"}
         transition={{ delay: 0.6, type: "spring" }}
       />
-      <div className="absolute flex z-50 left-0 h-full w-full items-center justify-center pointer-events-none	">
+      <div className="absolute flex z-50 left-0 h-full w-full items-center justify-center md:pointer-events-none	">
         <motion.div
           variants={grungeVariants}
           initial={"closed"}
