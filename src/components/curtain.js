@@ -82,7 +82,7 @@ export default function Curtain({ children }) {
             alt="Engel Logo"
             width="500"
             height="758"
-            className="w-36"
+            className="w-36 pointer-events-auto"
           />
         </Link>
       </motion.div>

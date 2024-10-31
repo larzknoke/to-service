@@ -18,7 +18,7 @@ function Contact() {
             alt="Facebook Logo"
             width="218"
             height="33"
-            className=" w-7 md:w-9"
+            className=" w-7 md:w-9 pointer-events-auto"
           />
         </Link>
         <div className="flex flex-row uppercase font-extrabold gap-2 text-sm md:text-lg">

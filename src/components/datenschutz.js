@@ -29,7 +29,7 @@ function Datenschutz({ datenschutzOpen, handleDatenschutz }) {
         </h1>
         <svg
           onClick={handleDatenschutz}
-          className="w-7 hover:cursor-pointer"
+          className="w-7 hover:cursor-pointer pointer-events-auto"
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

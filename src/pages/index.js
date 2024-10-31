@@ -45,7 +45,7 @@ export default function Home() {
               alt="Engel Logo"
               width="500"
               height="758"
-              className="w-36"
+              className="w-36 pointer-events-auto"
             />
           </Link>
         </motion.div>
@@ -60,14 +60,14 @@ export default function Home() {
         <div className="md:absolute md:right-7 md:bottom-7 left-7 bottom-10  flex flex-row gap-1 font-bold text-neutral-400 md:text-neutral-600 justify-start md:justify-end">
           <div
             onClick={handleImpress}
-            className="hover:text-neutral-300 hover:cursor-pointer z-50"
+            className="hover:text-neutral-300 hover:cursor-pointer z-50 pointer-events-auto"
           >
             Impressum
           </div>
           <div className=" z-50">|</div>
           <div
             onClick={handleDatenschutz}
-            className="hover:text-neutral-300 hover:cursor-pointer z-50"
+            className="hover:text-neutral-300 hover:cursor-pointer z-50 pointer-events-auto"
           >
             Datenschutz
           </div>
