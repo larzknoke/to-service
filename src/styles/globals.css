@@ -47,7 +47,7 @@ body {
 .grunge {
   position: absolute;
   background-image: url("/grunge.png");
-  background-position: 50%;
+  background-position: 50% 20%;
   opacity: 0.2;
   /* mix-blend-mode: overlay; */
   background-repeat: no-repeat;

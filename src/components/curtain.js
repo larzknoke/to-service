@@ -28,11 +28,11 @@ export default function Curtain({ children }) {
   // };
 
   const curtainVariants = {
-    closed: { width: "57%", transition: { duration: 0.4, ease: "easeInOut" } },
     open: {
       width: 0,
       transition: { duration: 0.4, ease: "easeInOut", delay: 0.4 },
     },
+    closed: { width: "57%", transition: { duration: 0.4, ease: "easeInOut" } },
   };
 
   const curtainButtonVariants = {
@@ -42,7 +42,7 @@ export default function Curtain({ children }) {
       scale: 0.8,
       top: wWidth > 500 ? "5%" : "15%",
     },
-    closed: { rotate: 0, scale: 1 },
+    closed: { rotate: 0, scale: 1, top: "15%" },
   };
 
   const grungeVariants = {
