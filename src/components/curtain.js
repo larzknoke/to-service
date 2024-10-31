@@ -55,7 +55,7 @@ export default function Curtain({ children }) {
   };
 
   return (
-    <div className="relative h-[100svh]OFF  overflow-x-hidden	overflow-y-scroll	 md:overflow-hidden grunge-logoOFF">
+    <div className="relative h-[100svh]OFF  overflow-x-hidden	overflow-y-scroll	 md:overflow-hidden grunge-logoOFF pointer-events-none">
       <Image
         src="/grunge_logo2.png"
         alt="Grunge Logo"

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Contact() {
   return (
-    <div className="contact-wrapper flex flex-col gap-4 p-3  md:p-10">
+    <div className="contact-wrapper flex flex-col gap-4 p-3  md:p-10 pointer-events-auto">
       <Image
         src="kontakt.svg"
         alt="Kontakt"
