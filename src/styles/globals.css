@@ -80,7 +80,7 @@ body {
   height: 100vh;
   width: 100vw; */
   @apply pt-64 pb-12 md:py-24;
-  cursor: -webkit-grab;
+  /* cursor: -webkit-grab; */
 }
 
 .marquee-item-wrapper {
@@ -101,12 +101,12 @@ body {
   will-change: transform;
 }
 
-.drag {
+/* .drag {
   cursor: -webkit-grabbing;
   cursor: grabbing;
-}
+} */
 
-.bg {
+/* .bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -114,7 +114,7 @@ body {
   width: 100%;
   background-color: #e6d5b8;
   pointer-events: none;
-}
+} */
 
 .datenschutz-content h2 {
   @apply text-2xl font-bold;

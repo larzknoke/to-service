@@ -27,7 +27,7 @@ export default function Home() {
           <InteractiveMarquee />
         </div>
         <motion.div
-          className=" mx-auto mb-20 flex-col gap-5  flex md:hidden w-full justify-center items-center "
+          className=" mx-auto mb-12 flex-col gap-5  flex md:hidden w-full justify-center items-center "
           initial={{ opacity: 0, scale: 0.8, y: "100%" }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1, delay: 1, type: "spring" }}
@@ -49,7 +49,15 @@ export default function Home() {
             />
           </Link>
         </motion.div>
-        <div className="md:absolute md:right-7 md:bottom-7 left-7 bottom-10  flex flex-row gap-1 font-bold text-neutral-600 justify-start md:justify-end">
+        <div className="w-[120%] opacity-20 translate-y-10 -translate-x-6 trans">
+          <Image
+            src="/to-gruppe-filter.png"
+            alt="TO-Gruppe"
+            width="1200"
+            height="623"
+          />
+        </div>
+        <div className="md:absolute md:right-7 md:bottom-7 left-7 bottom-10  flex flex-row gap-1 font-bold text-neutral-400 md:text-neutral-600 justify-start md:justify-end">
           <div
             onClick={handleImpress}
             className="hover:text-neutral-300 hover:cursor-pointer z-50"

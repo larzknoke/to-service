@@ -156,18 +156,18 @@ export const InteractiveMarquee = () => {
 
   return (
     <>
-      <motion.div className="bg" style={{ opacity }} />
+      {/* <motion.div className="bg" style={{ opacity }} /> */}
       <motion.div
         className="marquee"
-        style={{ skewX }}
+        // style={{ skewX }}
         ref={marquee}
-        onWheel={onWheel}
-        drag="x"
-        dragConstraints={{ left: 0, right: 0 }}
-        onPointerDown={onPointerDown}
-        onDrag={onDrag}
-        onPointerUp={onPointerUp}
-        dragElastic={0.0001}
+        // onWheel={onWheel}
+        // drag="x"
+        // dragConstraints={{ left: 0, right: 0 }}
+        // onPointerDown={onPointerDown}
+        // onDrag={onDrag}
+        // onPointerUp={onPointerUp}
+        // dragElastic={0.0001}
       >
         <div className="marquee-item-wrapper ">
           <MarqueeItem

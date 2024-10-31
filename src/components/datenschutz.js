@@ -25,7 +25,7 @@ function Datenschutz({ datenschutzOpen, handleDatenschutz }) {
     >
       <div className="flex flex-row justify-between">
         <h1 className="text-neutral-600 uppercase text-2xl font-extrabold ">
-          Datenschutzerklärung
+          Datenschutz
         </h1>
         <svg
           onClick={handleDatenschutz}
